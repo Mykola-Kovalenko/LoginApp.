@@ -101,38 +101,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uzj-el-dfW">
-                                <rect key="frame" x="163.33333333333334" y="159" width="66.666666666666657" height="36"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elL-4G-J9g">
-                                        <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uzj-el-dfW">
+                                <rect key="frame" x="163.33333333333337" y="159" width="66.666666666666686" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESn-yU-NqW">
-                                <rect key="frame" x="154" y="604" width="85" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ESn-yU-NqW" secondAttribute="height" multiplier="17:7" id="cIe-PT-6NR"/>
-                                </constraints>
+                                <rect key="frame" x="40" y="684.66666666666663" width="313" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
                                 <connections>
                                     <action selector="logOutButtonPressed:" destination="Rou-d9-F6T" eventType="touchUpInside" id="btm-Rg-iPp"/>
-                                    <segue destination="ZPL-JV-De8" kind="unwind" unwindAction="unwindSegue:" id="SPm-VQ-qlC"/>
+                                    <segue destination="ZPL-JV-De8" kind="unwind" unwindAction="unwindSegue:" id="Irj-s9-0Ib"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elL-4G-J9g">
+                                <rect key="frame" x="40" y="159" width="313" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wTL-QL-9Vy"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="uzj-el-dfW" firstAttribute="top" secondItem="wTL-QL-9Vy" secondAttribute="top" constant="100" id="Ajh-FA-qOG"/>
-                            <constraint firstItem="wTL-QL-9Vy" firstAttribute="bottom" secondItem="ESn-yU-NqW" secondAttribute="bottom" constant="130" id="Ff2-Y6-smX"/>
-                            <constraint firstItem="wTL-QL-9Vy" firstAttribute="trailing" secondItem="ESn-yU-NqW" secondAttribute="trailing" constant="154" id="JIc-di-eZ2"/>
-                            <constraint firstItem="uzj-el-dfW" firstAttribute="centerX" secondItem="qhq-qN-BK8" secondAttribute="centerX" id="a0B-c0-0mi"/>
-                            <constraint firstItem="ESn-yU-NqW" firstAttribute="leading" secondItem="wTL-QL-9Vy" secondAttribute="leading" constant="154" id="sca-gp-cZO"/>
+                            <constraint firstItem="wTL-QL-9Vy" firstAttribute="trailing" secondItem="ESn-yU-NqW" secondAttribute="trailing" constant="40" id="5Lo-Bk-pQm"/>
+                            <constraint firstItem="elL-4G-J9g" firstAttribute="leading" secondItem="wTL-QL-9Vy" secondAttribute="leading" constant="40" id="NZE-EQ-D8I"/>
+                            <constraint firstItem="elL-4G-J9g" firstAttribute="top" secondItem="wTL-QL-9Vy" secondAttribute="top" constant="100" id="O4s-Qz-dKe"/>
+                            <constraint firstItem="wTL-QL-9Vy" firstAttribute="bottom" secondItem="ESn-yU-NqW" secondAttribute="bottom" constant="50" id="Sgr-4z-WZH"/>
+                            <constraint firstItem="wTL-QL-9Vy" firstAttribute="trailing" secondItem="elL-4G-J9g" secondAttribute="trailing" constant="40" id="ouK-Za-JLj"/>
+                            <constraint firstItem="ESn-yU-NqW" firstAttribute="leading" secondItem="wTL-QL-9Vy" secondAttribute="leading" constant="40" id="pSR-At-weg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="hyY-iQ-lad"/>
