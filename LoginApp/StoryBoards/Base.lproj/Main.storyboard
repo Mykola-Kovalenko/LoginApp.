@@ -154,43 +154,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OW-XN-xg8">
-                                <rect key="frame" x="40" y="174" width="313" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqt-0h-tcB">
+                                <rect key="frame" x="40" y="79.000000000000014" width="313" height="129.33333333333337"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Instagramm"/>
+                                <buttonConfiguration key="configuration" style="plain" image="facebook"/>
+                                <connections>
+                                    <action selector="facebookButton:" destination="396-fo-eSi" eventType="touchUpInside" id="TdJ-Gn-TKL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OW-XN-xg8">
+                                <rect key="frame" x="40" y="248.33333333333337" width="313" height="134.66666666666663"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="instagramm">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="instagrammButton:" destination="396-fo-eSi" eventType="touchUpInside" id="M39-Ki-Cj7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHD-ay-Hmn">
-                                <rect key="frame" x="40" y="249" width="313" height="35"/>
+                                <rect key="frame" x="40" y="423" width="313" height="130.66666666666663"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Telegramm"/>
+                                <buttonConfiguration key="configuration" style="plain" image="telegramm"/>
                                 <connections>
                                     <action selector="telegrammButton:" destination="396-fo-eSi" eventType="touchUpInside" id="OQt-yA-FSE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqt-0h-tcB">
-                                <rect key="frame" x="40" y="99" width="313" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Facebook"/>
-                                <connections>
-                                    <action selector="facebookButton:" destination="396-fo-eSi" eventType="touchUpInside" id="TdJ-Gn-TKL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gXZ-EX-xPU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gXZ-EX-xPU" firstAttribute="trailing" secondItem="mqt-0h-tcB" secondAttribute="trailing" constant="40" id="6CL-e5-1fQ"/>
-                            <constraint firstItem="mqt-0h-tcB" firstAttribute="top" secondItem="gXZ-EX-xPU" secondAttribute="top" constant="40" id="FD0-Sc-Tdy"/>
-                            <constraint firstItem="1OW-XN-xg8" firstAttribute="leading" secondItem="gXZ-EX-xPU" secondAttribute="leading" constant="40" id="IRa-2u-XgX"/>
-                            <constraint firstItem="1OW-XN-xg8" firstAttribute="top" secondItem="mqt-0h-tcB" secondAttribute="bottom" constant="40" id="J8H-iA-epg"/>
-                            <constraint firstItem="gXZ-EX-xPU" firstAttribute="trailing" secondItem="1OW-XN-xg8" secondAttribute="trailing" constant="40" id="Lhg-hv-vIs"/>
-                            <constraint firstItem="aHD-ay-Hmn" firstAttribute="top" secondItem="1OW-XN-xg8" secondAttribute="bottom" constant="40" id="hza-HM-OK3"/>
-                            <constraint firstItem="mqt-0h-tcB" firstAttribute="leading" secondItem="gXZ-EX-xPU" secondAttribute="leading" constant="40" id="iyh-CI-lF3"/>
-                            <constraint firstItem="gXZ-EX-xPU" firstAttribute="trailing" secondItem="aHD-ay-Hmn" secondAttribute="trailing" constant="40" id="y2O-R3-fcr"/>
-                            <constraint firstItem="aHD-ay-Hmn" firstAttribute="leading" secondItem="gXZ-EX-xPU" secondAttribute="leading" constant="40" id="zJR-xO-5gB"/>
+                            <constraint firstItem="mqt-0h-tcB" firstAttribute="top" secondItem="gXZ-EX-xPU" secondAttribute="top" constant="20" id="7zt-eb-kdb"/>
+                            <constraint firstItem="aHD-ay-Hmn" firstAttribute="leading" secondItem="gXZ-EX-xPU" secondAttribute="leading" constant="40" id="BOI-AI-hgS"/>
+                            <constraint firstItem="gXZ-EX-xPU" firstAttribute="trailing" secondItem="aHD-ay-Hmn" secondAttribute="trailing" constant="40" id="STc-XV-b2f"/>
+                            <constraint firstItem="1OW-XN-xg8" firstAttribute="leading" secondItem="gXZ-EX-xPU" secondAttribute="leading" constant="40" id="Xhd-3A-SRh"/>
+                            <constraint firstItem="gXZ-EX-xPU" firstAttribute="trailing" secondItem="1OW-XN-xg8" secondAttribute="trailing" constant="40" id="aGN-be-uBP"/>
+                            <constraint firstItem="gXZ-EX-xPU" firstAttribute="trailing" secondItem="mqt-0h-tcB" secondAttribute="trailing" constant="40" id="bLa-bo-kqR"/>
+                            <constraint firstItem="1OW-XN-xg8" firstAttribute="top" secondItem="mqt-0h-tcB" secondAttribute="bottom" constant="40" id="sc2-yy-qFf"/>
+                            <constraint firstItem="aHD-ay-Hmn" firstAttribute="top" secondItem="1OW-XN-xg8" secondAttribute="bottom" constant="40" id="wOu-2c-5wK"/>
+                            <constraint firstItem="mqt-0h-tcB" firstAttribute="leading" secondItem="gXZ-EX-xPU" secondAttribute="leading" constant="40" id="whm-wC-TCd"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contscts" image="phone.arrow.up.right.fill" catalog="system" id="CWM-vq-sHX"/>
@@ -202,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GYa-bZ-Wr1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888" y="759"/>
+            <point key="canvasLocation" x="1887.7862595419847" y="758.45070422535218"/>
         </scene>
         <!--BIO-->
         <scene sceneID="Qtn-97-9eO">
@@ -267,8 +269,11 @@
     </scenes>
     <resources>
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
+        <image name="facebook" width="114.66666412353516" height="115.33333587646484"/>
+        <image name="instagramm" width="116.66666412353516" height="120.66666412353516"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="phone.arrow.up.right.fill" catalog="system" width="128" height="115"/>
+        <image name="telegramm" width="114" height="116.66666412353516"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
