@@ -110,8 +110,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
                                 <connections>
-                                    <action selector="logOutButtonPressed:" destination="Rou-d9-F6T" eventType="touchUpInside" id="btm-Rg-iPp"/>
-                                    <segue destination="ZPL-JV-De8" kind="unwind" unwindAction="unwindSegue:" id="Irj-s9-0Ib"/>
+                                    <segue destination="ZPL-JV-De8" kind="unwind" unwindAction="unwindSegue:" id="g5u-bg-tmN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elL-4G-J9g">
