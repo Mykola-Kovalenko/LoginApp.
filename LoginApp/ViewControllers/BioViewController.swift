@@ -11,14 +11,11 @@ class BioViewController: UIViewController {
     
     @IBOutlet var profileLabel: UILabel!
     
-    
     var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         profileLabel.text = user.information.bio
-        
-        
     }
 }
