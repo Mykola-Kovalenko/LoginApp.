@@ -15,6 +15,7 @@
 		C76613632945E907009A5819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76613612945E907009A5819 /* Main.storyboard */; };
 		C76613652945E909009A5819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76613642945E909009A5819 /* Assets.xcassets */; };
 		C76613682945E909009A5819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76613662945E909009A5819 /* LaunchScreen.storyboard */; };
+		C768D3D3297D3B130062654F /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768D3D2297D3B120062654F /* ContactViewController.swift */; };
 		C7B103E1294C60A50058E54E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B103E0294C60A50058E54E /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		C76613642945E909009A5819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C76613672945E909009A5819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C76613692945E909009A5819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C768D3D2297D3B120062654F /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		C7B103E0294C60A50058E54E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				C766135F2945E907009A5819 /*  LoginViewController.swift */,
 				C7B103E0294C60A50058E54E /* WelcomeViewController.swift */,
 				C7160377297C505900F8FCCB /* BioViewController.swift */,
+				C768D3D2297D3B120062654F /* ContactViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76613602945E907009A5819 /*  LoginViewController.swift in Sources */,
+				C768D3D3297D3B130062654F /* ContactViewController.swift in Sources */,
 				C716037A297D1FC300F8FCCB /* User.swift in Sources */,
 				C766135C2945E907009A5819 /* AppDelegate.swift in Sources */,
 				C7B103E1294C60A50058E54E /* WelcomeViewController.swift in Sources */,

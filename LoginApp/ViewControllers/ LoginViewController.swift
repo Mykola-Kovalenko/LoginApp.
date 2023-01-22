@@ -27,9 +27,10 @@ final class  LoginViewController: UIViewController {
         for viewController in viewControllers {
             if let destinationVC = viewController as? WelcomeViewController {
                 destinationVC.userName = user
-            } else if let navigationVC = viewController as? UINavigationController {
-                guard let userBioVC = navigationVC.topViewController as? BioViewController else { return }
+            } else if let userBioVC = viewController as? BioViewController {
                 userBioVC.user = user
+            } else if let contactVC = viewController as? ContactViewController {
+                contactVC.user = user
             }
         }
     }

@@ -144,26 +144,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoO-C3-OPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ZPL-JV-De8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1879" y="-359"/>
+            <point key="canvasLocation" x="1888" y="-734"/>
         </scene>
-        <!--Bio-->
-        <scene sceneID="WoR-BO-ddX">
+        <!--Contscts-->
+        <scene sceneID="Zmz-VL-5cR">
             <objects>
-                <navigationController id="9iU-tf-uJ1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bio" image="ellipsis" catalog="system" id="FJ5-5Q-T7f"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gpf-Bt-ZCh">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
+                <viewController id="396-fo-eSi" customClass="ContactViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XOh-Cc-Uhq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OW-XN-xg8">
+                                <rect key="frame" x="40" y="174" width="313" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Instagramm"/>
+                                <connections>
+                                    <action selector="instagrammButton:" destination="396-fo-eSi" eventType="touchUpInside" id="M39-Ki-Cj7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHD-ay-Hmn">
+                                <rect key="frame" x="40" y="249" width="313" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Telegramm"/>
+                                <connections>
+                                    <action selector="telegrammButton:" destination="396-fo-eSi" eventType="touchUpInside" id="OQt-yA-FSE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqt-0h-tcB">
+                                <rect key="frame" x="40" y="99" width="313" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Facebook"/>
+                                <connections>
+                                    <action selector="facebookButton:" destination="396-fo-eSi" eventType="touchUpInside" id="TdJ-Gn-TKL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gXZ-EX-xPU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gXZ-EX-xPU" firstAttribute="trailing" secondItem="mqt-0h-tcB" secondAttribute="trailing" constant="40" id="6CL-e5-1fQ"/>
+                            <constraint firstItem="mqt-0h-tcB" firstAttribute="top" secondItem="gXZ-EX-xPU" secondAttribute="top" constant="40" id="FD0-Sc-Tdy"/>
+                            <constraint firstItem="1OW-XN-xg8" firstAttribute="leading" secondItem="gXZ-EX-xPU" secondAttribute="leading" constant="40" id="IRa-2u-XgX"/>
+                            <constraint firstItem="1OW-XN-xg8" firstAttribute="top" secondItem="mqt-0h-tcB" secondAttribute="bottom" constant="40" id="J8H-iA-epg"/>
+                            <constraint firstItem="gXZ-EX-xPU" firstAttribute="trailing" secondItem="1OW-XN-xg8" secondAttribute="trailing" constant="40" id="Lhg-hv-vIs"/>
+                            <constraint firstItem="aHD-ay-Hmn" firstAttribute="top" secondItem="1OW-XN-xg8" secondAttribute="bottom" constant="40" id="hza-HM-OK3"/>
+                            <constraint firstItem="mqt-0h-tcB" firstAttribute="leading" secondItem="gXZ-EX-xPU" secondAttribute="leading" constant="40" id="iyh-CI-lF3"/>
+                            <constraint firstItem="gXZ-EX-xPU" firstAttribute="trailing" secondItem="aHD-ay-Hmn" secondAttribute="trailing" constant="40" id="y2O-R3-fcr"/>
+                            <constraint firstItem="aHD-ay-Hmn" firstAttribute="leading" secondItem="gXZ-EX-xPU" secondAttribute="leading" constant="40" id="zJR-xO-5gB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contscts" image="phone.arrow.up.right.fill" catalog="system" id="CWM-vq-sHX"/>
                     <connections>
-                        <segue destination="KFt-7G-uK4" kind="relationship" relationship="rootViewController" id="hiE-uq-PDN"/>
+                        <outlet property="facebookLink" destination="mqt-0h-tcB" id="yQJ-A6-Ps4"/>
+                        <outlet property="instLink" destination="1OW-XN-xg8" id="3Sj-SZ-is1"/>
+                        <outlet property="tgLink" destination="aHD-ay-Hmn" id="JMs-Jz-nk0"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XxC-Ib-d4E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYa-bZ-Wr1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906" y="305"/>
+            <point key="canvasLocation" x="1888" y="759"/>
         </scene>
-        <!--Bio View Controller-->
+        <!--BIO-->
         <scene sceneID="Qtn-97-9eO">
             <objects>
                 <viewController id="KFt-7G-uK4" customClass="BioViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -179,7 +220,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="profileBio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6v-Et-dPc">
-                                <rect key="frame" x="40" y="133" width="313" height="20.333333333333343"/>
+                                <rect key="frame" x="40" y="89" width="313" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -193,6 +234,7 @@
                             <constraint firstItem="GZZ-wl-w98" firstAttribute="trailing" secondItem="N6v-Et-dPc" secondAttribute="trailing" constant="40" id="u1t-2v-WOb"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="BIO" image="circle.grid.3x3" catalog="system" id="RwN-Sr-nwg"/>
                     <navigationItem key="navigationItem" id="68k-us-Luk"/>
                     <connections>
                         <outlet property="profileLabel" destination="N6v-Et-dPc" id="KYr-U5-KQF"/>
@@ -200,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVV-CF-a56" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2649.6183206106871" y="304.92957746478874"/>
+            <point key="canvasLocation" x="1888" y="-2"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LzL-AG-78f">
@@ -214,17 +256,19 @@
                     </tabBar>
                     <connections>
                         <segue destination="Rou-d9-F6T" kind="relationship" relationship="viewControllers" id="NWK-tE-3QQ"/>
-                        <segue destination="9iU-tf-uJ1" kind="relationship" relationship="viewControllers" id="f0k-KX-xUG"/>
+                        <segue destination="396-fo-eSi" kind="relationship" relationship="viewControllers" id="2hR-5Z-JiP"/>
+                        <segue destination="KFt-7G-uK4" kind="relationship" relationship="viewControllers" id="aBK-PG-GYc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVl-eN-4ce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="-3"/>
+            <point key="canvasLocation" x="963" y="-2"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone.arrow.up.right.fill" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
